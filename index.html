@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stephanie Comendador | CEO, Software Engineer</title>
+  <meta name="description" content="Personal portfolio of Stephanie Comendador, CEO and Software Engineer.">
+  <style>
+    :root {
+      --bg: #2C2828;        /* Midnight Charcoal */
+      --surface: #6D1A28;   /* Burgundy Wine */
+      --text: #E8D8C8;      /* Vintage Cream */
+      --muted: rgba(232, 216, 200, 0.78);
+      --accent: #8B0E1A;    /* Crimson Velvet (single accent) */
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    header { padding: 4rem 0 2rem; }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2rem, 8vw, 3.5rem);
+      line-height: 1.1;
+      overflow-wrap: anywhere;
+    }
+
+    .role {
+      margin: 0;
+      font-size: clamp(1.1rem, 4vw, 1.4rem);
+      color: var(--muted);
+    }
+
+    main { padding: 2rem 0 4rem; }
+
+    h2 {
+      margin: 0 0 2rem;
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1.75rem;
+      background: var(--surface);
+      border: 1px solid rgba(232, 216, 200, 0.2);
+      border-radius: 12px;
+    }
+
+    .card h3 { margin: 0 0 0.75rem; font-size: 1.3rem; }
+
+    .card p { margin: 0 0 1.5rem; flex: 1; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 1.25rem;
+      background: var(--accent);
+      color: var(--text);
+      border: 1px solid var(--text);
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .btn:hover { background: var(--text); color: var(--accent); }
+
+    a:focus-visible {
+      outline: 3px solid var(--text);
+      outline-offset: 3px;
+    }
+
+    footer {
+      padding: 3rem 0 4rem;
+      border-top: 1px solid rgba(232, 216, 200, 0.2);
+    }
+
+    footer h2 { margin-bottom: 1.5rem; }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    @media (min-width: 720px) {
+      .cards { grid-template-columns: repeat(3, 1fr); }
+      header { padding-top: 6rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Stephanie Comendador</h1>
+      <p class="role">CEO, Software Engineer</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>Placeholder: one sentence describing this project.</p>
+          <a class="btn" href="https://example.com/project-one" rel="noopener noreferrer">View project</a>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Placeholder: one sentence describing this project.</p>
+          <a class="btn" href="https://example.com/project-two" rel="noopener noreferrer">View project</a>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>Placeholder: one sentence describing this project.</p>
+          <a class="btn" href="https://example.com/project-three" rel="noopener noreferrer">View project</a>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <h2>Contact</h2>
+      <nav class="contact" aria-label="Contact">
+        <a class="btn" href="mailto:hello@example.com">Email</a>
+        <a class="btn" href="https://github.com/your-username" rel="noopener noreferrer">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/your-username" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
