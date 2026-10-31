@@ -7,5 +7,5 @@
 - [x] 5. Style the header, cards (single column first, then grid at wider widths) and footer. _R4, R6.4_
 - [x] 6. Add the tap-target sizes, hover and focus states, and the reduced-motion rule. _R6.3, R7.2_
 - [x] 7. Verify the constraints: no `<script>`, handlers or `javascript:`, one `<style>`, no external resources, `rel="noopener noreferrer"` on external links. _R1, R2, R7.3_
-- [ ] 8. Verify the layout at 320px and about 1280px: no horizontal scroll, readable text, cards stack and grid correctly. _R6_
-- [ ] 9. Report the result to the owner, with any remaining placeholders listed.
+- [x] 8. Verify the layout at 320px and about 1280px: no horizontal scroll, readable text, cards stack and grid correctly. _R6_
+- [x] 9. Report the result to the owner, with any remaining placeholders listed.
